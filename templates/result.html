@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            background-image: url("http://clipart-library.com/image_gallery/n781247.jpg");
+            background-size: cover;
+            color: white;
+            display: flex;
+            font-size: large;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 2em;
+            font-family: Arial, sans-serif;
+        }
+        section {
+            text-align: center;
+        }
+        h1 {
+            color: black;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        p {
+            color: red;
+            font-size: 1.5em;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Result</h1>
+        <p>Predicted Class: {{ prediction }}</p>
+        <img src="{{ image_file }}" alt="Uploaded Image">
+    </section>
+</body>
+</html>

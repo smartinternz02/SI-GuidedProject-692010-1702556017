@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenclassify.com</title>
+    <style>
+         body {
+          background-image: url("https://media.thevibes.com/images/uploads/covers/2022/September/CnL/_extra-large/vegetables-g1e48e55cf_1280.jpg");
+          background-size: cover;
+          color: #f4f4f4;
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        header{
+          background-color: #395722;
+          color: #333;
+          text-align: left;
+          padding: 2em;
+        }
+        section{
+            margin: 2em auto;
+            text-align: center;
+            padding: 2em;
+            width: 60%;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #f4f4f4;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #395722;
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 1em;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #395722;
+            color: #f4f4f4;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Greenclassify.com</h1>
+  </header>
+  <section>
+    <h2>Upload Image</h2>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <br>
+        <input type="submit" value="Predict">
+    </form>
+    <form action="/logout" method="post">
+        <input type="submit" value="Logout">
+    </form>
+  </section>
+</body>
+</html>
